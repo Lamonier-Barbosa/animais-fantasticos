@@ -1,4 +1,4 @@
-export default class ScrollSuave() {
+export default class ScrollSuave {
     constructor(links, options) {
         this.linksInternos = document.querySelectorAll(links);
         if (options === undefined) {
@@ -16,13 +16,13 @@ export default class ScrollSuave() {
         section.scrollIntoView(this.options);
     }
 
-    addLinkEvent(){
+    addLinkEvent() {
         this.linksInternos.forEach((link) => {
             link.addEventListener('click', this.scrollToSection);
         });
     }
 
-    init(){
+    init() {
         if (this.linksInternos.length) {
             this.addLinkEvent();
         }
