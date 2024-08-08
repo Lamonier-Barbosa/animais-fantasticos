@@ -1,3 +1,5 @@
+import debounce from "./debounce";
+
 export default function initAnimacaoScroll() {
 
     const section = document.querySelectorAll('[data-anime="scroll"]');
